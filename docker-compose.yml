@@ -1,0 +1,8 @@
+version: '3'
+services:
+  bogo:
+    image: gravityer/bogo:latest
+    build: .
+    container_name: gravityer-bogo
+    ports:
+      - 8080:8080
