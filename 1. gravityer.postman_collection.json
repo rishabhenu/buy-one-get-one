@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "1f430d8b-9381-4158-bfdc-87a1ffd3ea54",
+		"name": "1. gravityer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21740042",
+		"_collection_link": "https://cloudy-desert-164576.postman.co/workspace/My-Workspace~ae45d00b-9033-41f1-82a3-04307cf8c878/collection/21740042-1f430d8b-9381-4158-bfdc-87a1ffd3ea54?action=share&source=collection_link&creator=21740042"
+	},
+	"item": [
+		{
+			"name": "Rule Calculation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    5,\r\n    5,\r\n    10,\r\n    20,\r\n    30,\r\n    40,\r\n    50,\r\n    50,\r\n    50,\r\n    60\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/purchase/discount/RULE3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"purchase",
+						"discount",
+						"RULE3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/purchase/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"purchase",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
