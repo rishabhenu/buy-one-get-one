@@ -55,7 +55,7 @@ public class Rule12CalculationService extends AbstractRuleCalculationService {
         Iterator<Integer> iterator = allProductCosts.iterator();
         while (iterator.hasNext()) {
             Integer nextProductToCheckDiscount = iterator.next();
-            if (predicateMap().get(ruleName).test(currentCost, nextProductToCheckDiscount)) {
+            if (predicateMap().get(ruleName).test(nextProductToCheckDiscount, currentCost)) {
                 iterator.remove();
                 return nextProductToCheckDiscount;
             }
