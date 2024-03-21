@@ -43,6 +43,7 @@ public class Rule3CalculationService extends AbstractRuleCalculationService {
                 result.getDiscountedProductCosts().addAll(getDiscountedProducts(costOfAllProducts, boughtProduct));
             }
         }
+        costOfAllProducts.forEach(result::addBoughtProductCost);
         recordHistory(ruleCode, result);
         return result;
     }
